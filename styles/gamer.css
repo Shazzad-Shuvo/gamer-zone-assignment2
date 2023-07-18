@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+
+header {
+    background: #eedded;
+    /* box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); */
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+
+
+
+}
+
+.nav-title {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alphabet {
+    color: #FF42A5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav-menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+ul>li {
+    list-style: none;
+    margin-right: 15px;
+    font-size: .8rem;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.follow-us>ul {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 8px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    
+    nav{
+        padding: 20px;
+    }
+   
+    nav,
+    .nav-menu>ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 960px) {
+    nav,
+    .nav-menu>ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
