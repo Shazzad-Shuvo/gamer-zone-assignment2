@@ -23,7 +23,6 @@
 
 header {
     background: #eedded;
-    /* box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); */
 }
 
 nav {
@@ -76,17 +75,18 @@ ul a {
 
 /* main styles */
 main {
-    max-width: 1440px;
+
+}
+
+section{
+    max-width: 1040px;
+    margin: 0px auto 120px;
 }
 
 /* goat section styles */
 
 
 .goat {
-    padding: 20px 150px 0px;
-    /* background-image: url("../images/Group_14.png");
-    background-repeat: no-repeat;
-    background-position: right; */
     display: flex;
     gap: 100px;
     justify-content: space-between;
@@ -135,8 +135,13 @@ main {
     text-align: center;
 }
 
-.online-games .online-games-title,
-.goat-color {
+.online-games-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.funny-text{
+    color: #8758F1;
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -159,9 +164,36 @@ main {
     justify-content: space-around;
 }
 
-.funny-video>img{
-    width: 230px;
+.funny-video img{
+    width: 100%;
 }
+
+.vdo-img p{
+    margin-top: 10px;
+    font-size: .8rem;
+}
+
+
+/* play anywhere anytime styles */
+
+.play-anywhere-anytime{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.anywhere-img img{
+    width: 100%;
+    margin-right: 100px;
+}
+
+.small-img{
+    width: 45%;
+    position: relative;
+    bottom: 130px;
+    left: 250px;
+}
+
 
 
 
@@ -175,28 +207,44 @@ main {
 
     nav,
     .nav-menu>ul,
-    .goat {
+    .goat,
+    .funny-video {
         flex-direction: column;
         gap: 20px;
     }
 
-    
-    .funny-video{
-        flex-wrap: wrap;
+    .play-anywhere-anytime{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
+
+    .anywhere-img img{
+        width: 70%;
+        margin-right: 50px;
+    }
+
+
 
     .goat-content {
         text-align: center;
     }
 
-    .online-games {
+    .online-games,
+    .play-anywhere-anytime {
         margin: 20px;
         text-align: center;
+    }
+
+    .small-img{
+        width: 45%;
+        position: relative;
+        bottom: 100px;
+        left: 230px;
     }
 }
 
 
-@media screen and (min-width: 425px) and (max-width: 960px) {
+@media screen and (min-width: 426px) and (max-width: 960px) {
 
     nav,
     .nav-menu>ul {
@@ -204,11 +252,35 @@ main {
         gap: 20px;
     }
 
+    .play-anywhere-anytime{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+
     .goat {
         padding: 20px;
     }
 
     .funny-video>img{
         width: 150px;
+    }
+
+    .anywhere-img img{
+        width: 70%;
+        margin-right: 80px;
+    }
+
+    .online-games,
+    .play-anywhere-anytime {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .small-img{
+        width: 45%;
+        position: relative;
+        bottom: 170px;
+        left: 450px;
     }
 }
