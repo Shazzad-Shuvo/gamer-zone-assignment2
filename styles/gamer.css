@@ -16,6 +16,7 @@
     font-weight: 600;
     border: 0;
     padding: 15px 25px;
+    cursor: pointer;
 }
 
 /* header styles */
@@ -109,11 +110,10 @@ main {
 .goat-color {
     color: #8758F1;
     font-size: 5rem;
-    font-style: normal;
     font-weight: 800;
 }
 
-.btn-secondary{
+.btn-secondary {
     border-radius: 48px;
     background: linear-gradient(90deg, #55b1fc 0%, #0559a8 100%);
     color: #FFF;
@@ -121,10 +121,46 @@ main {
     font-weight: 600;
     border: 0;
     padding: 15px 25px;
+    cursor: pointer;
 }
 
 .goat-img img {
     width: 100%;
+}
+
+/* online games and funny videos styles */
+
+.online-games {
+    margin: 120px 150px 0;
+    text-align: center;
+}
+
+.online-games .online-games-title,
+.goat-color {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.online-games-title{
+    margin-bottom: 10px;
+}
+
+.online-games-description {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.funny-video{
+
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.funny-video>img{
+    width: 230px;
 }
 
 
@@ -144,7 +180,17 @@ main {
         gap: 20px;
     }
 
-    .goat-content{
+    
+    .funny-video{
+        flex-wrap: wrap;
+    }
+
+    .goat-content {
+        text-align: center;
+    }
+
+    .online-games {
+        margin: 20px;
         text-align: center;
     }
 }
@@ -160,5 +206,9 @@ main {
 
     .goat {
         padding: 20px;
+    }
+
+    .funny-video>img{
+        width: 150px;
     }
 }
